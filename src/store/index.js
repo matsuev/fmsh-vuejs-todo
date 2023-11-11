@@ -34,7 +34,11 @@ export const ToDo = defineStore('todo', {
 
       Append(str)
       {
-         this.itemList.push(str)
+         this.itemList.push({
+            title: str,
+            done: false,
+            deathLine: null,
+         })
       }
    }
 })
