@@ -11,3 +11,6 @@ const app = createApp(App)
 app.use(pinia)
 app.use(ElementPlus)
 app.mount('#lesson01')
+
+// hdjskgh klsdfhgjkl hsdf gjklhjkls dfgh kjsdfhjkl
+// hdsjkfg skdhf jksd fkljhdsfkl hg kljsdfglksdfg lskj
