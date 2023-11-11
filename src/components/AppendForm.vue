@@ -1,7 +1,10 @@
 <template>
-   <div>Append form</div>
-   <input v-model="newToDo" />
-   <button @click="onAppendClick">Append</button>
+   <el-form class="my-form">
+      <el-form-item label="Название задачи">
+         <el-input v-model="newToDo" />
+      </el-form-item>
+      <el-button type="primary" @click="onAppendClick">Append</el-button>
+   </el-form>
 </template>
 
 <script setup>
@@ -17,3 +20,9 @@ function onAppendClick()
    newToDo.value = ''
 }
 </script>
+
+<style>
+.my-form {
+   max-width: 400px;
+}
+</style>

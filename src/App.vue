@@ -7,5 +7,5 @@
 <script setup>
 import AppendForm from '@/components/AppendForm.vue';
 import ToDoList from '@/components/ToDoList.vue';
-import { ToDo } from '@/store';
+import { ToDo } from '@/store/todo_store.js';
 </script>

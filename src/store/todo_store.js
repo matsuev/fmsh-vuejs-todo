@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 
 export const ToDo = defineStore('todo', {
+   // STATE
    state: () =>
    ({
       itemList: [
@@ -22,10 +23,16 @@ export const ToDo = defineStore('todo', {
       ]
    }),
 
+   // GETTERS
    getters: {
-      List: (state) => state.itemList
+      List: (state) => state.itemList,
+
+      ListDone: (state) => state.itemList.filter((item) => item.done)
+
+
    },
 
+   // ACTIONS
    actions: {
       Delete(index)
       {
